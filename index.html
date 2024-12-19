@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Управління фільмами</title>
+</head>
+<body>
+  <h1>Список фільмів</h1>
+
+  <button id="getMovies">Отримати фільми</button>
+
+  <table id="moviesTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Назва</th>
+        <th>Жанр</th>
+        <th>Режисер</th>
+        <th>Рік</th>
+        <th>Дії</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Дані фільмів будуть відображатися тут -->
+    </tbody>
+  </table>
+
+  <h2>Додати новий фільм</h2>
+  <form id="addMovieForm">
+    <label>Назва: <input type="text" id="title" required></label>
+    <label>Жанр: <input type="text" id="genre" required></label>
+    <label>Режисер: <input type="text" id="director" required></label>
+    <label>Рік: <input type="number" id="year" required></label>
+    <button type="submit">Додати фільм</button>
+  </form>
+
+  <script src="app.js"></script>
+</body>
+</html>
